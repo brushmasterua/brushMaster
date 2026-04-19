@@ -42,7 +42,7 @@ export default function CheckoutPage() {
     paymentMethod: "card",
   });
 
-//   const deliveryCost = totalPrice > 1000 ? 0 : 50;
+  const deliveryCost = totalPrice > 1000 ? 0 : 50;
   const finalTotal = totalPrice ;
 
   // Якщо кошик порожній
