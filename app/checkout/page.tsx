@@ -354,10 +354,6 @@ export default function CheckoutPage() {
                   <span>Товари ({totalItems} шт.)</span>
                   <span>{totalPrice} ₴</span>
                 </div>
-                <div className="flex justify-between text-gray-600">
-                  <span>Доставка</span>
-                  <span>{deliveryCost === 0 ? "Безкоштовно" : `${deliveryCost} ₴`}</span>
-                </div>
                 <div className="flex justify-between text-lg font-bold pt-2">
                   <span>До сплати</span>
                   <span className="text-[#f97316]">{finalTotal} ₴</span>
