@@ -17,9 +17,9 @@ export default function CartPage() {
   const [promoApplied, setPromoApplied] = useState(false);
 
   const subtotal = totalPrice;
-  const deliveryCost = subtotal > 1000 ? 0 : 50;
-  const discount = promoApplied ? subtotal * 0.1 : 0;
-  const finalTotal = subtotal + deliveryCost - discount;
+  // const deliveryCost = subtotal > 1000 ? 0 : 50;
+  // const discount = promoApplied ? subtotal * 0.1 : 0;
+  const finalTotal = subtotal
 
   const applyPromoCode = () => {
     if (promoCode.toLowerCase() === "brush10") {
