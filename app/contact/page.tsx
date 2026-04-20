@@ -236,7 +236,7 @@ export default function ContactPage() {
                   ) : (
                     <>
                       <Send className="w-4 h-4" />
-                      Надіслати повідомлення
+                      Надіслати
                     </>
                   )}
                 </button>
