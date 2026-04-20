@@ -146,7 +146,16 @@ export const GoodCard: React.FC<GoodCardProps> = ({
               : "bg-orange-500 hover:bg-orange-600"
           )}
         >
-          {isInCart ? "В кошику ✓" : "Купити"}
+         {isInCart ? (
+  <span className="flex items-center gap-2">
+    В кошику ✓
+    <span className="bg-white/20 px-2 py-0.5 rounded-full text-sm">
+      {cartItem?.quantity}
+    </span>
+  </span>
+) : (
+  "Купити"
+)}
         </Button>
       </div>
     </div>
