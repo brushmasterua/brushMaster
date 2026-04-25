@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
+import { CallButton } from "@/components/shared/call-button";
 
 export function LayoutWrapper({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -13,6 +14,7 @@ export function LayoutWrapper({ children }: { children: React.ReactNode }) {
       {!isAdminRoute && <Header />}
       <main className="flex-1">{children}</main>
       {!isAdminRoute && <Footer />}
+      {!isAdminRoute && <CallButton />}
     </>
   );
 }
