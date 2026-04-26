@@ -213,15 +213,15 @@ export default async function AdminDashboard() {
                 iconColor: "text-[#f97316]",
                 bgIcon: "bg-orange-100"
               },
-            //   {
-            //     href: "/admin/orders",
-            //     icon: ShoppingBag,
-            //     title: "Замовлення",
-            //     desc: "Перегляд та управління замовленнями",
-            //     color: "from-blue-50 to-blue-100/30",
-            //     iconColor: "text-blue-600",
-            //     bgIcon: "bg-blue-100"
-            //   },
+              {
+                href: "/admin/orders",
+                icon: ShoppingBag,
+                title: "Замовлення",
+                desc: "Перегляд та управління замовленнями",
+                color: "from-blue-50 to-blue-100/30",
+                iconColor: "text-blue-600",
+                bgIcon: "bg-blue-100"
+              },
               {
                 href: "/admin/categories",
                 icon: Tag,
